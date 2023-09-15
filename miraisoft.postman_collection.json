@@ -1,0 +1,142 @@
+{
+	"info": {
+		"_postman_id": "1c168c81-91ab-46a3-9289-a918a8ab6261",
+		"name": "miraisoft",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "5071729"
+	},
+	"item": [
+		{
+			"name": "pagination",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://127.0.0.1:8000/api/accounts"
+			},
+			"response": []
+		},
+		{
+			"name": "store",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"login\": \"dongtt\",\n    \"password\": \"bcsok\"\n}"
+				},
+				"url": "http://127.0.0.1:8000/api/accounts"
+			},
+			"response": []
+		},
+		{
+			"name": "file",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"file\": \"test.html\",\n    \"app_env\": 0,\n    \"contract_server\": 0\n}"
+				},
+				"url": "http://127.0.0.1:8000/api/showSerialpaso"
+			},
+			"response": []
+		},
+		{
+			"name": "edit",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"login\": \"dongtt\",\n    \"password\": \"bcsok\"\n}"
+				},
+				"url": "http://127.0.0.1:8000/api/accounts/1"
+			},
+			"response": []
+		},
+		{
+			"name": "delete",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"login\": \"dongtt10\",\n    \"password\": \"bcsok\"\n}"
+				},
+				"url": "http://127.0.0.1:8000/api/accounts/1"
+			},
+			"response": []
+		},
+		{
+			"name": "show",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"login\": \"dongtt10\",\n    \"password\": \"bcsok\"\n}"
+				},
+				"url": "http://127.0.0.1:8000/api/accounts/1"
+			},
+			"response": []
+		}
+	]
+}
